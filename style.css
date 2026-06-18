@@ -100,18 +100,13 @@ nav img{
 .hr{
     margin-top: 10vh;
 }
-.img1 img{
-    width: 50vh;
-    position: absolute;
-    top: 25%;
-    left: 15%;
-}
+
 .text-box{
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 70%;
+    left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
@@ -134,9 +129,4 @@ nav img{
     cursor: pointer;
     padding: 12px 34px ;
 }
-.img2 img{
-    width: 90vh;
-    position: absolute;
-    left: 57%;
-    top: 24%;
-}
+
