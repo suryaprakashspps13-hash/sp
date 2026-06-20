@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>susilya.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="2.png" alt=""></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
                 <ul>
                     <li class="homebtn"><a href="index.html">Engineering</a></li>
-                    <li class="aboutbtn"><a href="training.html">Professional Training</a></li>
+                    <li class="aboutbtn"><a href="training.html">Training</a></li>
                     <li class="coursesbtn"><a href="">Courses</a></li>
                     <li class="contactbtn"><a href="">Contact Us</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
    
    
@@ -33,6 +33,19 @@
         
 
 </section>
+<!------JavaScript for Toggle Menu------>
+ 
+<script>
+   var navLinks=document.getElementById("navLinks");
+
+   function showMenu(){
+    navLinks.style.right="";
+   }
+function hideMenu(){
+    navLinks.style.right="-200px";
+}
+
+</script>
     
     
 </body>
