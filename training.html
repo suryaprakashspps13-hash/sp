@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>susilya.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="2.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
                 <ul>
                     <li class="homebtn"><a href="index.html">Engineering</a></li>
                     <li class="aboutbtn"><a href="training.html">Training</a></li>
@@ -18,18 +20,84 @@
                     <li class="contactbtn"><a href="">Contact Us</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
    
    
+
    <div class="text-box">
+    <img src="4.png" alt="">
     <h1>100% Free Plateform To Develop <br> Proffesional Skills For Every Job Seeker</h1>
     <p>Learn the job oriented professional industrial skills <br> to get your dream job in your dream company <br> after completing your studies  </p>
     <a href="" class="hero-btn">Explore The Courses</a>
    </div>     
         
 
-    </section>
-    
+</section>
+<!----------Services---------->
+<section class="services">
+    <h1>What We Provide</h1>
+    <p>We bridge the gap between the college study and the industrial experience by 
+        providing courses for all the professional skills used by the working proffessionals in MNCs and Reputed Companies.
+    </p>
+
+<div class="row">
+    <div class="services-col">
+        <img src="img/6.jpg" alt="">
+    <h3>Core Industrial concepts for interview and Technical Round</h3>
+    <p>Learn all the Advanced skills that professional engineers are using in MNCs 
+        and crack any interview and technical round in your first attempt.
+    </p>
+    </div>
+    <div class="services-col">
+        <img src="img/8.jpg" alt="">
+    <h3>Advanced Training <br> of industrial Softwares for Tool Test</h3>
+    <p>Learn the 100% job oriented courses and be expert in Mechanical and Civil Design Softwares.
+    </p>
+    </div>
+    <div class="services-col">
+        <img src="img/7.jpg" alt="">
+    <h3>Soft Skill and Personality Development</h3>
+    <p>Learn the soft skills and develop your personality so that the hr will think 100 times before 
+        rejecting you.   
+    </p>
+    </div>
+    <div class="services-col">
+        <img src="img/10.jpg" alt="">
+    <h3>Students Section <br> for currently persuing degree</h3>
+    <p>This section provides highly useful study materials that helps students 
+        to perform extra ordinary in their degree exams and practicals. 
+    </p>
+    </div>
+</div>
+</section> 
+
+<section>
+<div class="contact">
+    <img src="img/12.jpg" alt="">
+    <h1>Contact Us</h1>
+    <p>If you are interested in any of the services that we provide feel 
+        free to mail your requirement to suryaprakashspps13@gmail.com
+    </p>
+   </div>       
+</section>
+
+
+
+
+<!------JavaScript for Toggle Menu------>
+ 
+<script>
+   var navLinks=document.getElementById("navLinks");
+
+   function showMenu(){
+    navLinks.style.right="0";
+   }
+   function hideMenu(){
+    navLinks.style.right="-200px";
+   }
+
+</script>
     
     
 </body>
