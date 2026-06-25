@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susilya.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+            <a href="index.html"><img src="2.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">Engineering</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<!----------Services---------->
+<section class="services">
+       <h1>Advanced Machine Design Training</h1>
+    <p>Bridge the Gap Between CAD Modeling and Real-World Manufacturing
+    </p>
+    <h2>PROGRAM OVERVIEW</h2>
+    <h3>Just One Course for all the skills:Core Industrial Design Concepts, 
+        GD&T, CAD/CAM/CAE Software Mastery and Many More
+    </h3>
+    <p>Most courses only teach you how to click buttons in CAD Softwares. This program is different. You will learn the actual engineering principles, standards, and component selection methods required to turn a digital 3D model into a physical, functional product.
+
+By the end of this course, you will possess the exact skills that hiring managers look for in an Industry-Ready Design Engineer.
+</p>
+<h3>MODULE 1: CAD TOOL MASTERY (THE TOOLS)</h3>
+<p>3D CAD Modeling Mastery: Parametric 3D part modeling, advanced top-down assembly, and configuration management. <br> 2D Drawing Proficiency: Efficient 2D drafting, layout planning, architectural layers, and legacy drawing modifications. <br>
+    Design Intent: Structuring models so they are easy to modify, update, and scale without errors.
+</p>
+<h3>MODULE 2: GD&T, LIMITS, & FITS (THE PRECISION)</h3>
+<p>GD&T Fundamentals (ASME Y14.5): Mastering datums, MMC (Maximum Material Condition), and geometric controls (Position, Flatness, Runout). <br>
+Limits and Fits: Selecting and applying standard fits (Clearance, Interference, and Transition) using international hole/shaft basis charts (e.g., H7/g6). <br>
+Tolerance Stack-up Analysis: Calculating worst-case scenarios to guarantee parts fit together perfectly on the assembly line.
+</p>
+<h3>MODULE 3: PRODUCTION BLUEPRINTS & SYMBOLS (THE LANGUAGE)</h3>
+<p>Weldment Architecture: Creating structural frames and applying standard welding symbols (Fillet, Groove, Butt welds) correctly. <br>
+Surface Texture Control: Defining surface roughness symbols 
+</p>
+
+</section> 
+
+<!------JavaScript for Toggle Menu------>
+ 
+<script>
+   var navLinks=document.getElementById("navLinks");
+
+   function showMenu(){
+    navLinks.style.right="0";
+   }
+   function hideMenu(){
+    navLinks.style.right="-200px";
+   }
+
+</script>
+    
+    
+</body>
+</html>
