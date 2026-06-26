@@ -195,4 +195,7 @@ h3{
     .blogs{
         width: 90%;
     }
+    .blogs img{
+        width: 300px;
+    }
 }
