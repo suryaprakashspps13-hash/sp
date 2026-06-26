@@ -130,16 +130,20 @@ margin: auto;
 text-align: center;
 padding-top: 100px;
 }
+.services h1{
+    font-size: 36px;
+    font-weight: 600;
+}
 .blogs{
 width: 50%;
 margin: auto;
 text-align: justify;
 padding-top: 50px;
 }
-.services h1{
-    font-size: 36px;
-    font-weight: 600;
+.blogs h3{
+    text-align: left;
 }
+
 p{
     color: #777;
     font-size: 14px;
