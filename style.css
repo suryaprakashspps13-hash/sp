@@ -146,6 +146,9 @@ padding-top: 50px;
 .blogs h1{
     text-align: center;
 }
+.blogs h2{
+    text-align: left;
+}
 
 p{
     color: #777;

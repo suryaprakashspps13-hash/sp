@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susilya.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+            <a href="index.html"><img src="2.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">Engineering</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<!----------Blogs---------->
+<section class="blogs">
+       <h1>Core Mechanical Design Concepts</h1>
+    <p>The industrial design process in reputed industries and MNCs involves the 
+        following steps: <br>
+        # Scope/Customer Inputs <br>
+        # Concept Generation <br>
+        # Generation of 3D Assemblies and Parts <br>
+        # Simulation, Testing and modifications based on results <br>
+        # Generation of Technical Drawings & Bill Of Materials <br>
+    </p>
+    <h2> Scope/Customer Inputs</h2>
+    <p>This is the first step in industrial design of any machine, mechanism or structure.
+        The company gets Inputs from the client about what features and specificatins 
+        are required in the product to be designed and manufactured.
+    </p>
+
+    <h2>Concept Generation </h2>
+    <p>After receiving the client inputs, the initial concept of the project is generated involving 
+        the below steps: <br>
+         #Selection of required machine components and checking their 
+         suitability in machine i.e. Bearings, Ball Screws, Rails etc. <br>
+         # Selection of raw materials and type of manufacturing 
+         components such as machine base, column, brackets, slides ets. <br>
+         # Creation of Machine Layout 
+    </p>
+    
+    <h2>Applications of CAD Tools</h2>
+    <p>After Concept generation 3D CAD Modeling Tools are used to create assemblies and parts</p>
+   
+    <h2>Design Considerations in Assembly and Parts</h2>
+    <p>After creating the 3D Models and Addemblies, the below mentioned design Considerations 
+        are cosidered to control the feature and specificatins of the product. <br>
+        This process involves <br>
+        <h3>Weldment parts</h3>
+             <p> # How to create Weldment Model <br>
+                 # Cosiderations during creating weldment model <br>
+                 # Nesting using Weldment Model <br></p>
+        <h3>Casting Model</h3>
+             <p> # How to create Casting Model <br>
+                 # Importance of wall thickness and fillets <br>
+                 # Machining Allowances <br>
+                 # Considerations during creating casting model <br></p>
+        <h3>Machine Assemblies</h3>
+             <p> # Bottom up and Top down assembly <br>
+                 # Mechanical Mates <br>
+                 # Limits, fits and tolerances</p>
+
+    
+    <h2>Simulation and Testing </h2>
+            <p>After the features and specificatins of the product are 
+                decided it is tested using simulations softwares to ensure that
+                it should work properly after manufacturing. <br>
+                This process involves <br>
+               # Simulation Concepts <br>
+               # Factor of Safety analysis using simulation tool.
+            </p>
+    
+    <h2>Technical Drafting </h2>
+           <p>After Successful simulation and testing the frication drawings are created
+              for manufacturing of the various parts of the product. <br>
+              This process involves <br>
+              # GD&T <br>
+              # Limits, fits and tolerances <br>
+              # Rules for dimensioning <br>
+              # Features and their applications <br>
+              # Roughness grades <br>
+          </p>
+</section>
+
+<!----------Footer---------->
+<section class="footer">
+    <h4>Contact Us</h4>
+    <p>If you are interested in any of the services that we provide feel 
+        free to mail your requirement to contact@susilya.com</p>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+ 
+<script>
+   var navLinks=document.getElementById("navLinks");
+
+   function showMenu(){
+    navLinks.style.right="0";
+   }
+   function hideMenu(){
+    navLinks.style.right="-200px";
+   }
+
+</script>
+    
+    
+</body>
+</html>
