@@ -157,6 +157,9 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+.blogs a{
+    color: blueviolet;
+}
 .row{
     margin-top: 5%;
     display: flex;
