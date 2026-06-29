@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+     <nav>
             <a href="index.html"><img src="2.png" alt=""></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i> 
-                <ul>
+            <div class="nav-links">
+                
+                <span class="menubtn" onclick="showMenu()">&#9776</span>
+                <span class="closebtn" onclick="hideMenu()">&#9746</span> 
+                <ul id="menu">
                     <li><a href="index.html">Engineering</a></li>
                     <li><a href="training.html">Training</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            
         </nav>
 <!----------Services---------->
 <section class="services">
@@ -58,17 +60,23 @@
 
 <!------JavaScript for Toggle Menu------>
  
-<script>
-   var navLinks=document.getElementById("navLinks");
+<script>let x = document.getElementById('menu');
+    let menubtn = document.querySelector('.menubtn');
+    let closebtn = document.querySelector('.closebtn');
 
-   function showMenu(){
-    navLinks.style.right="0";
-   }
-   function hideMenu(){
-    navLinks.style.right="-200px";
-   }
+    function showMenu()
+    {
+        x.style.display = 'block';
+        menubtn.style.display = 'none';
+        closebtn.style.display = 'block';
+    }
+    function hideMenu()
+    {
+        x.style.display = 'none';
+        menubtn.style.display = 'block';
+        closebtn.style.display = 'none';
+    }</script>
 
-</script>
     
     
 </body>
