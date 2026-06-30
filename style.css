@@ -36,7 +36,7 @@ nav img{
     padding: 8px 12px;
     position: relative;
     border: 2px solid #e46b6b;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .nav-links ul li a
 {
@@ -45,22 +45,12 @@ nav img{
     font-size: 16px;
    
 }
-.nav-links ul li::after{
-    content:'';
-    width: 0%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
-}
+
+
 .nav-links ul li:hover{
     background: darkcyan;
     border: 2px solid #fff;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -99,18 +89,7 @@ nav img{
 }
 
 
-@media(max-width:700px){
-.text-box h1{
-    font-size: 20px;  
-}
-.nav-links{
-    display: block;
-}
 
-.nav-links ul{
-    padding: 30px;
-}
-}
 .closebtn,.menubtn{
     font-size: 30px;
     margin: 0px 20px;
@@ -186,11 +165,24 @@ h3{
     font-weight: 600;
 }
 @media(max-width:700px){
+.text-box h1{
+    font-size: 20px;  
+}
+.nav-links{
+    display: block;
+}
+
+.nav-links ul{
+    padding: 30px;
+}
+}
+@media(max-width:700px){
     ul{
         display: none;
     }
     ul li{
         display: block;
+        width: 100%;
         margin: 5px;
     }
     .menubtn{
