@@ -35,9 +35,7 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    border: 2px solid #e46b6b;
-    border-radius: 20px;
-}
+   }
 .nav-links ul li a
 {
     color: #fff;
@@ -182,7 +180,7 @@ h3{
     }
     ul li{
         display: block;
-        width: 100%;
+        width: 50%;
         margin: 5px;
     }
     .menubtn{
