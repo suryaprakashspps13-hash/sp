@@ -55,7 +55,7 @@ nav img{
 .text-box{
     width: 90%;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -102,7 +102,7 @@ nav img{
 width: 80%;
 margin: auto;
 text-align: center;
-padding-top: 100px;
+padding-top: 50px;
 }
 .services h1{
     font-size: 36px;
@@ -215,7 +215,8 @@ h3{
         width: 300px;
     }
     .img4{
-        display: none;
+        width: 100px;
+     
     }
 
 }
