@@ -1,3 +1,4 @@
+@import url('googleapis.com');
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ nav{
 nav img{
     width: 220px;
 }
-.nav links{
+.nav-links{
  flex: 1;
  text-align: right;
 }
@@ -92,7 +93,7 @@ nav img{
     margin-bottom: 10px;
 }
 .hero-btn:hover{
-    border: 1px solid#f44336;
+    border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
 }
@@ -192,6 +193,7 @@ padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px 10px 10px 10px;
 }
 
 .faq h1{
@@ -231,8 +233,8 @@ padding-bottom: 50px;
     box-sizing: border-box;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5); 
     margin-bottom: 10px;
-    padding-top: 10px;
-    padding-right: 20px;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
 }
 
 /*---------footer---------*/
