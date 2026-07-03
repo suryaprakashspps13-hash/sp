@@ -210,6 +210,32 @@ padding-top: 50px;
     flex-direction: column;
     justify-content: center;
 }
+td,th{
+  padding: 10px; border: 1px solid #ddd;  
+}
+.trtitle{
+    background: #eee;
+}
+.table{
+    width: 70%;
+margin: auto;
+text-align: justify;
+padding-top: 50px;
+    margin-bottom: 40px; background: #f9f9f9; padding: 25px; border-left: 5px solid #0056b3;
+}
+table{
+    width: 100%; border-collapse: collapse; margin-top: 15px; text-align: left;
+}
+
+.cosultation{
+ width: 70%;
+margin: auto;
+text-align: center;
+padding-top: 50px;
+    margin-bottom: 40px; background: black; padding: 25px;  border-radius: 5px; 
+}
+
+
 
 .faq h1{
    
@@ -322,6 +348,9 @@ padding-bottom: 50px;
     width: 100%;
     }
     .faq-box{
+    width: 90%;
+    }
+    .table{
     width: 90%;
     }
 
