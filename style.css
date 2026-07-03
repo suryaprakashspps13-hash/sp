@@ -28,6 +28,10 @@ p{
     font-size: 1em;
     font-weight: 400;
 }
+.rndimg{
+    border-radius: 50px;
+    padding-bottom: 10px;
+}
 .header
 {
 min-height: 100vh; 
