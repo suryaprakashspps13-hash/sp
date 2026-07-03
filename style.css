@@ -6,6 +6,28 @@
     color: #333;
     font-size: 1em;
 }
+
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p{
+    color: #2f4f4f;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+}
 .header
 {
 min-height: 100vh; 
@@ -15,15 +37,7 @@ background-position: center;
 background-size: cover;
 position: relative;
 }
-h1{
-    font-size: 2em;
-}
-h2{
-    font-size: 1.5em;
-}
-h3{
-    font-size: 1.2em;
-}
+
 nav{
     display: flex;
     padding: 1% 1%;
@@ -105,36 +119,35 @@ nav img{
 }
 
 .blogs{
-width: 50%;
+width: 70%;
 margin: auto;
 text-align: justify;
 padding-top: 50px;
+
 }
 .blogs h3{
     text-align: left;
      font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 5px;
 }
 .blogs h1{
-    text-align: center;
-     font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+     font-weight: 700;
+     font-size: 2.5rem;
+    
 }
 .blogs h2{
     text-align: left;
-     font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 700;
+     padding-bottom: 10px;
+     border-bottom: 2px solid #ccc;
+}
+.blogs p{
+line-height: 1.6;
+width: 100%;
 }
 
-p{
-    color: #2f4f4f;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    font-size: 1em;
-    font-weight: 400;
-}
+
 .blogs a{
     color: blueviolet;
 }
@@ -201,7 +214,9 @@ padding-top: 50px;
 }
 .faq h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-weight: 600;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 10px;
 }
 .faq h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -220,10 +235,9 @@ box-sizing: border-box;
 align-items: center;
 padding-bottom: 50px;
 }
-.faq h2{
-    color: #fff;
-    padding-bottom: 10px;
-}
+
+   
+
 .faq-box{
     width: 60%;
     background-color: #ffffff;
@@ -247,6 +261,7 @@ padding-bottom: 50px;
     margin-top: 20px;
     font-weight: 600;
 }
+/*---------media queries---------*/
 @media(max-width:700px){
 .text-box h1{
     font-size: 20px;  
@@ -258,8 +273,8 @@ padding-bottom: 50px;
 .nav-links ul{
     padding: 30px;
 }
-}
-@media(max-width:700px){
+
+
     ul{
         display: none;
     }
@@ -282,13 +297,13 @@ padding-bottom: 50px;
         text-align: center;
         z-index: 2;
          }
-}
-@media(max-width:700px){
+
+
     .row{
         flex-direction: column;
     }
-}
-@media(max-width:700px){
+
+
     .blogs{
         width: 90%;
     }

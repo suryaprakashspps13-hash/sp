@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Component Selection & Engineering Calculations | Susilya</title>
+    <meta name="description" content="Technical guide to industrial machine component selection. Learn how we calculate suitability, load capacities, and lifetimes for bearings, ball screws, and linear rails.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="2.png" alt="Susilya Mechanical Design Logo"></a>
+        <div class="nav-links">
+            <span class="menubtn" onclick="showMenu()">&#9776;</span>
+            <span class="closebtn" onclick="hideMenu()">&#215;</span> 
+            <ul id="menu">
+                <li><a href="index.html">Engineering</a></li>
+                <li><a href="cad-modeling.html">CAD Modeling</a></li>
+                <li><a href="simulation-testing.html">Simulation</a></li>
+                <li><a href="gdt-drafting.html">GD&T Drafting</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="component-content" style="padding: 40px 10%; max-width: 1200px; margin: auto; font-family: sans-serif; line-height: 1.6; color: #333;">
+        <h1 style="color: #111; font-size: 2.5rem; margin-bottom: 20px;">Industrial Machine Component Selection &amp; Verification</h1>
+        <p style="font-size: 1.1rem; color: #555; margin-bottom: 30px;">Selecting the right standard mechanical components is the difference between a high-performance industrial system and premature machine failure. At Susilya, we follow a rigorous mathematical and application-driven engineering approach to evaluate, select, and integrate critical machine elements.</p>
+
+        <!-- Section 1: Bearings -->
+        <section style="margin-bottom: 40px;">
+            <h2 style="color: #222; border-bottom: 2px solid #ccc; padding-bottom: 10px;">1. Industrial Bearing Selection &amp; Life Calculations</h2>
+            <p>Bearings are the core of rotary systems. Choosing the right bearing requires mapping out the exact mechanical application constraints to prevent operational fatigue.</p>
+            
+            <h3 style="font-size: 1.2rem; margin-top: 15px;">Critical Engineering Parameters Covered:</h3>
+            <ul>
+                <li><strong>Load Types:</strong> Evaluating pure radial, pure axial, or combined moment loads to choose between Deep Groove, Angular Contact, Tapered Roller, or Thrust bearings.</li>
+                <li><strong>L10 Life Calculations:</strong> Calculating the rating life in hours or revolutions using dynamic load ratings ($C$) and equivalent applied loads ($P$).</li>
+                <li><strong>Lubrication &amp; Sealing:</strong> Selecting oil vs. grease lubrication based on operational DN factors (speed metrics) and working environment contaminations.</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Ball Screws -->
+        <section style="margin-bottom: 40px;">
+            <h2 style="color: #222; border-bottom: 2px solid #ccc; padding-bottom: 10px;">2. Precision Ball Screw Selection &amp; Sizing</h2>
+            <p>For high-accuracy linear actuation, ball screws convert rotary motion to linear displacement with minimal friction. Correct sizing prevents buckling and positioning errors.</p>
+            
+            <h3 style="font-size: 1.2rem; margin-top: 15px;">Critical Engineering Parameters Covered:</h3>
+            <ul>
+                <li><strong>Lead Accuracy &amp; Backlash:</strong> Matching international tolerance classes (e.g., C3, C5, C7) with the precision requirements of the machine.</li>
+                <li><strong>Critical Speed Verification:</strong> Calculating the maximum allowable rotational speed to avoid dangerous screw shaft whipping (resonance).</li>
+                <li><strong>Buckling Load Limits:</strong> Verifying the structural safety of the screw under high compressive axial loads, depending on end-mounting arrangements (Fixed-Supported, Fixed-Fixed, etc.).</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Linear Guide Rails -->
+        <section style="margin-bottom: 40px;">
+            <h2 style="color: #222; border-bottom: 2px solid #ccc; padding-bottom: 10px;">3. Linear Guide Profile Rails &amp; Carriage Integration</h2>
+            <p>Profile linear guide rails support linear motion vectors while carrying heavy moments and loads. Sizing ensures system structural stiffness.</p>
+            
+            <h3 style="font-size: 1.2rem; margin-top: 15px;">Critical Engineering Parameters Covered:</h3>
+            <ul>
+                <li><strong>Preload Classes:</strong> Selecting light, medium, or heavy preload settings to maximize machine rigidity without causing excessive operational drag.</li>
+                <li><strong>Static Safety Factors:</strong> Testing linear blocks against sudden impact loads, emergency stops, and heavy overhung moment loads.</li>
+                <li><strong>Parallelism &amp; Mounting Geometric Tolerances:</strong> Engineering precise mounting shoulder heights and tolerances to avoid internal binding of carriages.</li>
+            </ul>
+        </section>
+
+        <!-- Summary Selection Matrix for SEO -->
+        <section style="margin-bottom: 40px; background: #f9f9f9; padding: 25px; border-left: 5px solid #0056b3;">
+            <h2 style="color: #222; margin-top: 0;">Component Engineering Sizing Matrix</h2>
+            <p>Our systematic design checklists balance component lifecycle costs with raw performance markers:</p>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px; text-align: left;">
+                <thead>
+                    <tr style="background: #eee;">
+                        <th style="padding: 10px; border: 1px solid #ddd;">Component Type</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Primary Sizing Driver</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Key Failure Risk Avoided</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>Rolling Bearings</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">RPM limits &amp; combined loading</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Subsurface fatigue spalling</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ball Screws</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Axial force &amp; unsupported length</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Structural buckling / Shaft whipping</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;"><strong>Linear Guide Rails</strong></td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Overhung moment load vectors</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Carriage binding / Pitch-Yaw errors</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Technical Consultation CTA -->
+        <section style="text-align: center; margin-top: 50px; padding: 30px; background: #111; color: #fff; border-radius: 4px;">
+            <h2 style="margin-top: 0; color: #fff;">Need Verification for Your Machine Design?</h2>
+            <p style="color: #ccc;">Let our engineering team handle your complex structural component sizing, life cycle calculations, and 3D CAD implementation.</p>
+            <a href="mailto:contact@susilya.com" style="display: inline-block; background: #0056b3; color: white; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; margin-top: 15px; transition: background 0.3s;">Email Your Design Requirements</a>
+        </section>
+    </main>
+
+    <!----------Footer---------->
+    <section class="footer" style="padding: 30px 10%; text-align: center; background: #f4f4f4; margin-top: 40px;">
+        <h4>Contact Us</h4>
+        <p>If you are interested in any of the services that we provide feel free to mail your requirement to <a href="mailto:contact@susilya.com">contact@susilya.com</a></p>
+    </section>
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        let x = document.getElementById('menu');
+        let menubtn = document.querySelector('.menubtn');
+        let closebtn = document.querySelector('.closebtn');
+
+        function showMenu() {
+            x.style.display = 'block';
+            menubtn.style.display = 'none';
+            closebtn.style.display = 'block';
+        }
+        function hideMenu() {
+            x.style.display = 'none';
+            menubtn.style.display = 'block';
+            closebtn.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
