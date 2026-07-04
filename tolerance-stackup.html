@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tolerance Stack-up | Mechanical Engineering Guide</title>
+
+<meta name="description"
+content="Learn tolerance stack-up in mechanical engineering including types of tolerances, accumulation of errors, worst case and RSS methods, and industrial applications.">
+
+<meta name="keywords"
+content="Tolerance Stack-up, Engineering Tolerance, GD&T, Mechanical Design, Manufacturing Tolerances, Assembly Analysis">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">
+<img src="2.png" alt="Susilya Engineering">
+</a>
+
+<div class="nav-links">
+
+<span class="menubtn" onclick="showMenu()">&#9776;</span>
+<span class="closebtn" onclick="hideMenu()">&#215;</span>
+
+<ul id="menu">
+<li><a href="index.html">Engineering</a></li>
+<li><a href="training.html">Training</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<section class="blogs">
+
+<h1>Tolerance Stack-up</h1>
+
+<p>
+Tolerance stack-up is the process of analyzing how dimensional variations in individual components accumulate in an assembly. It ensures that parts will fit and function correctly even when manufacturing variations occur.
+</p>
+
+<p>
+In mechanical design, no part can be manufactured with perfect accuracy. Small variations always exist, and tolerance stack-up helps predict their combined effect.
+</p>
+
+<hr>
+
+<h2>What is Tolerance?</h2>
+
+<p>
+Tolerance is the permissible variation in a physical dimension of a part.
+</p>
+
+<ul>
+
+<li>Controls manufacturing accuracy</li>
+
+<li>Ensures proper fit between parts</li>
+
+<li>Reduces assembly issues</li>
+
+</ul>
+
+<hr>
+
+<h2>Why Tolerance Stack-up is Important</h2>
+
+<ul>
+
+<li>Ensures proper assembly fit</li>
+
+<li>Prevents interference or gaps</li>
+
+<li>Improves product reliability</li>
+
+<li>Reduces manufacturing rework</li>
+
+<li>Helps in cost optimization</li>
+
+</ul>
+
+<hr>
+
+<h2>Types of Tolerance Stack-up Methods</h2>
+
+<table>
+
+<tr class="trtitle">
+<th>Method</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Worst Case Method</td>
+<td>Assumes all tolerances are at maximum variation</td>
+</tr>
+
+<tr>
+<td>RSS Method</td>
+<td>Uses statistical root sum square calculation</td>
+</tr>
+
+<tr>
+<td>Monte Carlo Simulation</td>
+<td>Advanced statistical analysis using random variation</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- Part 2 continues here -->
+ 
+<h2>Worst Case Method</h2>
+
+<p>
+The worst case method assumes that all component tolerances reach their maximum or minimum limits at the same time.
+</p>
+
+<ul>
+
+<li>Provides 100% safety assurance</li>
+
+<li>Used in critical assemblies</li>
+
+<li>Leads to tighter tolerances and higher cost</li>
+
+</ul>
+
+<p>
+Formula:
+</p>
+
+<p>
+Total Tolerance = T1 + T2 + T3 + ... + Tn
+</p>
+
+<hr>
+
+<h2>RSS (Root Sum Square) Method</h2>
+
+<p>
+The RSS method is a statistical approach that gives a more realistic result by considering probability distribution of tolerances.
+</p>
+
+<p>
+Formula:
+</p>
+
+<p>
+Total Tolerance = √(T1² + T2² + T3² + ... + Tn²)
+</p>
+
+<ul>
+
+<li>More economical than worst case method</li>
+
+<li>Used in mass production industries</li>
+
+<li>Assumes normal distribution of errors</li>
+
+</ul>
+
+<hr>
+
+<h2>Example of Tolerance Stack-up</h2>
+
+<p>
+Consider a shaft assembly with three components:
+</p>
+
+<table>
+
+<tr class="trtitle">
+<th>Component</th>
+<th>Tolerance</th>
+</tr>
+
+<tr>
+<td>Part A</td>
+<td>±0.1 mm</td>
+</tr>
+
+<tr>
+<td>Part B</td>
+<td>±0.2 mm</td>
+</tr>
+
+<tr>
+<td>Part C</td>
+<td>±0.15 mm</td>
+</tr>
+
+</table>
+
+<p>
+Worst Case Total = 0.1 + 0.2 + 0.15 = ±0.45 mm
+</p>
+
+<p>
+RSS Total = √(0.1² + 0.2² + 0.15²) ≈ ±0.27 mm
+</p>
+
+<hr>
+
+<h2>CAD in Tolerance Analysis</h2>
+
+<p>
+Modern CAD tools help engineers simulate tolerance stack-up before manufacturing.
+</p>
+
+<ul>
+
+<li>Automatic tolerance analysis tools</li>
+
+<li>Assembly variation simulation</li>
+
+<li>Interference checking</li>
+
+<li>3D dimensional analysis</li>
+
+</ul>
+
+<hr>
+
+<h2>Design Considerations</h2>
+
+<ul>
+
+<li>Keep number of tolerance chains minimal</li>
+
+<li>Assign realistic tolerances</li>
+
+<li>Focus on functional dimensions</li>
+
+<li>Avoid over-tight tolerances</li>
+
+<li>Use GD&T where applicable</li>
+
+</ul>
+
+<hr>
+
+<!-- Part 3 continues here -->
+ 
+<h2>Practical Example of Tolerance Stack-up</h2>
+
+<p>
+Consider a mechanical assembly where a cover plate must fit over a base with multiple spacers. Even small variations in each spacer affect the final gap.
+</p>
+
+<table>
+
+<tr class="trtitle">
+<th>Component</th>
+<th>Effect on Assembly</th>
+</tr>
+
+<tr>
+<td>Base Plate</td>
+<td>Reference datum for alignment</td>
+</tr>
+
+<tr>
+<td>Spacer 1</td>
+<td>Controls vertical clearance</td>
+</tr>
+
+<tr>
+<td>Spacer 2</td>
+<td>Contributes to total height variation</td>
+</tr>
+
+<tr>
+<td>Cover Plate</td>
+<td>Final fit depends on accumulated tolerances</td>
+</tr>
+
+</table>
+
+<p>
+If tolerances are not controlled properly, the cover may become too tight or have excessive clearance.
+</p>
+
+<hr>
+
+<h2>Common Mistakes in Tolerance Stack-up</h2>
+
+<ul>
+
+<li>Ignoring cumulative effect of small tolerances</li>
+
+<li>Using overly tight tolerances everywhere</li>
+
+<li>Not considering manufacturing capability</li>
+
+<li>Incorrect selection of datum references</li>
+
+<li>Overlooking thermal expansion effects</li>
+
+</ul>
+
+<hr>
+
+<h2>Professional Tips</h2>
+
+<ul>
+
+<li>Use worst-case analysis for critical safety parts</li>
+
+<li>Use RSS method for mass production</li>
+
+<li>Define clear datum structures</li>
+
+<li>Optimize tolerances for cost and function balance</li>
+
+<li>Always validate assembly fit virtually in CAD</li>
+
+</ul>
+
+<hr>
+
+<h2>Frequently Asked Questions (FAQ)</h2>
+
+<div class="faq-box">
+
+<h3>What is tolerance stack-up?</h3>
+<p>
+It is the accumulation of dimensional variations in an assembly that affects final fit and function.
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>Why is tolerance stack-up important?</h3>
+<p>
+It ensures that parts assemble correctly even with manufacturing variations.
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>What is the difference between worst case and RSS method?</h3>
+<p>
+Worst case assumes maximum variation of all parts, while RSS uses statistical probability for more realistic results.
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>Where is tolerance stack-up used?</h3>
+<p>
+It is widely used in automotive, aerospace, machine design, and precision manufacturing industries.
+</p>
+
+</div>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>
+Tolerance stack-up is a critical part of mechanical design that ensures proper assembly and functional reliability. By analyzing how individual tolerances accumulate, engineers can prevent assembly issues and optimize manufacturing cost.
+</p>
+
+<p>
+A good understanding of tolerance analysis improves product quality, reduces rework, and ensures consistent performance in production.
+</p>
+
+<hr>
+
+<h2>Related Learning Resources</h2>
+
+<ul>
+
+<li><a href="gd-and-t.html">GD&T</a></li>
+<li><a href="engineering-drawings.html">Engineering Drawings</a></li>
+<li><a href="machine-design-process.html">Machine Design Process</a></li>
+<li><a href="cad-modeling.html">CAD Modeling</a></li>
+
+</ul>
+
+<!-- Closing section starts here -->
+
+</section>
+
+<section class="footer">
+
+<h4>Contact Us</h4>
+
+<p>
+For tolerance analysis and mechanical design support, contact us at <strong>contact@susilya.com</strong>.
+</p>
+
+</section>
+
+<script>
+
+let x = document.getElementById('menu');
+let menubtn = document.querySelector('.menubtn');
+let closebtn = document.querySelector('.closebtn');
+
+function showMenu()
+{
+    x.style.display = 'block';
+    menubtn.style.display = 'none';
+    closebtn.style.display = 'block';
+}
+
+function hideMenu()
+{
+    x.style.display = 'none';
+    menubtn.style.display = 'block';
+    closebtn.style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>

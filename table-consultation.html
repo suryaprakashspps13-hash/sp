@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susilya.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <nav>
+            <a href="index.html"><img src="2.png" alt=""></a>
+            <div class="nav-links">
+                
+                <span class="menubtn" onclick="showMenu()">&#9776</span>
+                <span class="closebtn" onclick="hideMenu()">&#215</span> 
+                <ul id="menu">
+                    <li><a href="index.html">Engineering</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+
+
+<section class="table">
+            <h2>Component Engineering Sizing Matrix</h2>
+            <p>Our systematic design checklists balance component lifecycle costs with raw performance markers:</p>
+            <table>
+                <thead>
+                    <tr class="trtitle">
+                        <th>Component Type</th>
+                        <th>Primary Sizing Driver</th>
+                        <th>Key Failure Risk Avoided</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Rolling Bearings</strong></td>
+                        <td>RPM limits &amp; combined loading</td>
+                        <td>Subsurface fatigue spalling</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ball Screws</strong></td>
+                        <td>Axial force &amp; unsupported length</td>
+                        <td>Structural buckling / Shaft whipping</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Linear Guide Rails</strong></td>
+                        <td>Overhung moment load vectors</td>
+                        <td>Carriage binding / Pitch-Yaw errors</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+<!-- Technical Consultation CTA -->
+         <section class="cosultation">
+            <h2>Need Verification for Your Machine Design?</h2>
+            <p>Let our engineering team handle your complex structural component sizing, life cycle calculations, and 3D CAD implementation.</p>
+            <a href="mailto:contact@susilya.com">Email Your Design Requirements</a>
+        </section>
+
+
+<!----------Footer---------->
+<section class="footer">
+    <h4>Contact Us</h4>
+    <p>If you are interested in any of the services that we provide feel 
+        free to mail your requirement to contact@susilya.com</p>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+ 
+<script>let x = document.getElementById('menu');
+    let menubtn = document.querySelector('.menubtn');
+    let closebtn = document.querySelector('.closebtn');
+
+    function showMenu()
+    {
+        x.style.display = 'block';
+        menubtn.style.display = 'none';
+        closebtn.style.display = 'block';
+    }
+    function hideMenu()
+    {
+        x.style.display = 'none';
+        menubtn.style.display = 'block';
+        closebtn.style.display = 'none';
+    }</script>
+
+    
+    
+</body>
+</html>

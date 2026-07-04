@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GD&T | Geometric Dimensioning and Tolerancing Complete Guide</title>
+
+<meta name="description"
+content="Learn GD&T (Geometric Dimensioning and Tolerancing) used in mechanical engineering for controlling form, orientation, location, and runout of components with precision manufacturing standards.">
+
+<meta name="keywords"
+content="GD&T, Geometric Dimensioning and Tolerancing, Mechanical Engineering, Tolerances, Engineering Drawings, Manufacturing, ISO Standards">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">
+<img src="2.png" alt="Susilya Engineering">
+</a>
+
+<div class="nav-links">
+
+<span class="menubtn" onclick="showMenu()">&#9776;</span>
+<span class="closebtn" onclick="hideMenu()">&#215;</span>
+
+<ul id="menu">
+<li><a href="index.html">Engineering</a></li>
+<li><a href="training.html">Training</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+</div>
+
+</nav>
+
+<section class="blogs">
+
+<h1>GD&T (Geometric Dimensioning and Tolerancing)</h1>
+
+<p>
+Geometric Dimensioning and Tolerancing (GD&T) is a symbolic engineering language used to define allowable variation in part geometry. It controls not only size, but also form, orientation, and location of features in a functional way.
+</p>
+
+<p>
+It ensures that parts fit and function correctly in real assemblies even when small manufacturing variations occur. This makes GD&T essential in automotive, aerospace, robotics, and precision machine design industries.
+</p>
+
+<hr>
+
+<h2>Why GD&T is Used</h2>
+
+<ul>
+
+<li>Improves functional design accuracy</li>
+<li>Reduces manufacturing ambiguity</li>
+<li>Ensures interchangeability of parts</li>
+<li>Reduces inspection errors</li>
+<li>Improves communication between design and manufacturing</li>
+
+</ul>
+
+<p>
+Without GD&T, the same drawing can be interpreted differently by different manufacturers, leading to assembly failures.
+</p>
+
+<hr>
+
+<h2>Traditional Tolerancing vs GD&T</h2>
+
+<table>
+
+<tr class="trtitle">
+<th>Traditional ± Tolerancing</th>
+<th>GD&T Approach</th>
+</tr>
+
+<tr>
+<td>Controls only size variation</td>
+<td>Controls size + form + orientation + location</td>
+</tr>
+
+<tr>
+<td>Ambiguous interpretation</td>
+<td>Standardized global interpretation</td>
+</tr>
+
+<tr>
+<td>Higher rejection rate</td>
+<td>Lower manufacturing cost</td>
+</tr>
+
+<tr>
+<td>Does not guarantee function</td>
+<td>Ensures functional performance</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>Basic Concepts of GD&T</h2>
+
+<h3>Feature</h3>
+<p>
+A feature is any physical portion of a part such as a hole, surface, slot, or edge.
+</p>
+
+<h3>Datum</h3>
+<p>
+A datum is a reference surface, axis, or point used to locate and orient features.
+</p>
+
+<h3>True Position</h3>
+<p>
+True position defines the exact theoretical location of a feature.
+</p>
+
+<h3>Tolerance Zone</h3>
+<p>
+A tolerance zone defines the acceptable variation allowed in a feature.
+</p>
+
+<hr>
+
+<h2>Introduction to Datums</h2>
+
+<p>
+Datums are the foundation of GD&T. They establish a reference coordinate system for measurement and inspection.
+</p>
+
+<ul>
+
+<li>Flat surface</li>
+<li>Cylindrical hole</li>
+<li>Axis of rotation</li>
+<li>Center plane</li>
+
+</ul>
+
+<table>
+
+<tr class="trtitle">
+<th>Datum Level</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Datum A</td>
+<td>Primary reference surface</td>
+</tr>
+
+<tr>
+<td>Datum B</td>
+<td>Secondary reference</td>
+</tr>
+
+<tr>
+<td>Datum C</td>
+<td>Tertiary reference</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>GD&T Feature Control Frame</h2>
+
+<p>
+The Feature Control Frame is the standard method to define geometric tolerances in GD&T.
+</p>
+
+<ul>
+
+<li>Geometric symbol</li>
+<li>Tolerance value</li>
+<li>Material condition (MMC, LMC, RFS)</li>
+<li>Datum references</li>
+
+</ul>
+
+<hr>
+
+<h2>Material Condition Symbols</h2>
+
+<table>
+
+<tr class="trtitle">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>MMC</td>
+<td>Maximum Material Condition</td>
+</tr>
+
+<tr>
+<td>LMC</td>
+<td>Least Material Condition</td>
+</tr>
+
+<tr>
+<td>RFS</td>
+<td>Regardless of Feature Size</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>GD&T Categories Overview</h2>
+
+<ul>
+
+<li>Form tolerances (flatness, roundness)</li>
+<li>Orientation tolerances (parallelism, perpendicularity)</li>
+<li>Location tolerances (position, symmetry)</li>
+<li>Runout tolerances</li>
+<li>Profile tolerances</li>
+
+</ul>
+
+<!-- IMPORTANT: Part 2 continues from here -->
+
+<h2>GD&T Feature Control Frame in Detail</h2>
+
+<p>
+The Feature Control Frame (FCF) is the core element of GD&T. It defines how a particular feature must behave in terms of geometry, tolerance, and reference datums.
+</p>
+
+<p>
+It is always read from left to right in a standardized format used worldwide.
+</p>
+
+<ul>
+
+<li>Geometric characteristic symbol (shape control)</li>
+
+<li>Tolerance value (allowed variation)</li>
+
+<li>Material condition modifier (MMC, LMC, RFS)</li>
+
+<li>Datum references (A, B, C)</li>
+
+</ul>
+
+<hr>
+
+<h2>Types of Geometric Tolerances</h2>
+
+<h3>1. Form Tolerances</h3>
+
+<ul>
+<li>Flatness</li>
+<li>Straightness</li>
+<li>Roundness</li>
+<li>Cylindricity</li>
+</ul>
+
+<p>
+Form tolerances control the shape of a feature without using any datum reference.
+</p>
+
+<hr>
+
+<h3>2. Orientation Tolerances</h3>
+
+<ul>
+<li>Parallelism</li>
+<li>Perpendicularity</li>
+<li>Angularity</li>
+</ul>
+
+<p>
+These control how a feature is oriented relative to a datum.
+</p>
+
+<hr>
+
+<h3>3. Location Tolerances</h3>
+
+<ul>
+<li>Position</li>
+<li>Concentricity</li>
+<li>Symmetry</li>
+</ul>
+
+<p>
+Location tolerances define where a feature is allowed to be within a tolerance zone.
+</p>
+
+<hr>
+
+<h3>4. Runout Tolerances</h3>
+
+<ul>
+<li>Circular runout</li>
+<li>Total runout</li>
+</ul>
+
+<p>
+Runout controls rotating parts such as shafts to avoid vibration and wobbling.
+</p>
+
+<hr>
+
+<h3>5. Profile Tolerances</h3>
+
+<ul>
+<li>Profile of a line</li>
+<li>Profile of a surface</li>
+</ul>
+
+<p>
+Profile controls complex curved surfaces used in aerodynamic and molded components.
+</p>
+
+<hr>
+
+<h2>True Position Concept</h2>
+
+<p>
+True position defines the exact theoretical location of a feature such as a hole or slot.
+</p>
+
+<p>
+Instead of allowing variation in X and Y separately, GD&T uses a circular tolerance zone around the ideal location.
+</p>
+
+<p>
+This improves assembly accuracy and functional performance.
+</p>
+
+<hr>
+
+<h2>Material Condition Modifiers</h2>
+
+<table>
+
+<tr class="trtitle">
+<th>Modifier</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>MMC</td>
+<td>Maximum material condition (least clearance)</td>
+</tr>
+
+<tr>
+<td>LMC</td>
+<td>Least material condition (maximum clearance)</td>
+</tr>
+
+<tr>
+<td>RFS</td>
+<td>Regardless of feature size</td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>Why GD&T is Better Than Traditional Tolerancing</h2>
+
+<ul>
+
+<li>Reduces manufacturing confusion</li>
+<li>Improves part functionality</li>
+<li>Allows flexible manufacturing tolerances</li>
+<li>Reduces rejection rates</li>
+<li>Improves inspection using CMM machines</li>
+
+</ul>
+
+<hr>
+
+<!-- IMPORTANT: Part 3 continues from here -->
+ 
+<h2>GD&T Practical Example (Shaft with Bearings)</h2>
+
+<p>
+Consider a gearbox shaft with two bearing seats and one coupling end. All features must be aligned with the central axis for smooth operation.
+</p>
+
+<table>
+
+<tr class="trtitle">
+<th>Feature</th>
+<th>GD&T Control</th>
+</tr>
+
+<tr>
+<td>Bearing Seat 1</td>
+<td>Cylindricity + runout control</td>
+</tr>
+
+<tr>
+<td>Bearing Seat 2</td>
+<td>Cylindricity + position control</td>
+</tr>
+
+<tr>
+<td>Coupling End</td>
+<td>True position tolerance</td>
+</tr>
+
+<tr>
+<td>Shaft Axis</td>
+<td>Concentricity with datum A</td>
+</tr>
+
+</table>
+
+<p>
+This ensures smooth rotation, reduced vibration, and proper load distribution during operation.
+</p>
+
+<hr>
+
+<h2>Common GD&T Mistakes</h2>
+
+<ul>
+
+<li>Missing or incorrect datum selection</li>
+<li>Overusing GD&T symbols unnecessarily</li>
+<li>Confusing position with ± tolerancing</li>
+<li>Incorrect tolerance zone definition</li>
+<li>Ignoring manufacturing limitations</li>
+
+</ul>
+
+<hr>
+
+<h2>Professional GD&T Tips</h2>
+
+<ul>
+
+<li>Always start from functional requirements</li>
+<li>Use datums based on assembly conditions</li>
+<li>Prefer position tolerance over ± tolerancing</li>
+<li>Keep drawings simple and clear</li>
+<li>Validate design with manufacturing team</li>
+
+</ul>
+
+<hr>
+
+<h2>Frequently Asked Questions (FAQ)</h2>
+
+<div class="faq-box">
+
+<h3>What is GD&T used for?</h3>
+<p>
+GD&T is used to control form, orientation, location, and runout of mechanical parts for proper assembly and function.
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>Why is GD&T better than normal tolerancing?</h3>
+<p>
+Because it defines functional geometry instead of just size limits, reducing errors in manufacturing and assembly.
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>Where is GD&T used?</h3>
+<p>
+It is widely used in automotive, aerospace, robotics, and precision machine industries.
+</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>What is a datum?</h3>
+<p>
+A datum is a reference surface, axis, or point used for measurement and alignment in GD&T.
+</p>
+
+</div>
+
+<hr>
+
+<h2>Conclusion</h2>
+
+<p>
+GD&T is an essential engineering system that ensures accurate communication between design and manufacturing. It improves product quality, reduces cost, and ensures functional performance of mechanical assemblies.
+</p>
+
+<p>
+Proper use of GD&T leads to better design control, fewer production errors, and higher reliability in real-world applications.
+</p>
+
+<hr>
+
+<h2>Related Learning Resources</h2>
+
+<ul>
+
+<li><a href="engineering-drawings.html">Engineering Drawings</a></li>
+<li><a href="machine-design-process.html">Machine Design Process</a></li>
+<li><a href="cad-modeling.html">CAD Modeling</a></li>
+<li><a href="solidworks-training.html">SOLIDWORKS Training</a></li>
+<li><a href="creo-training.html">Creo Training</a></li>
+
+</ul>
+
+<!-- Closing section starts here -->
+
+</section>
+
+<section class="footer">
+
+<h4>Contact Us</h4>
+
+<p>
+If you need mechanical design or GD&T support, contact us at <strong>contact@susilya.com</strong>.
+</p>
+
+</section>
+
+<script>
+
+let x = document.getElementById('menu');
+let menubtn = document.querySelector('.menubtn');
+let closebtn = document.querySelector('.closebtn');
+
+function showMenu()
+{
+    x.style.display = 'block';
+    menubtn.style.display = 'none';
+    closebtn.style.display = 'block';
+}
+
+function hideMenu()
+{
+    x.style.display = 'none';
+    menubtn.style.display = 'block';
+    closebtn.style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>
