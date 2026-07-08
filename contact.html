@@ -1,63 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>susilya.com</title>
+
+    <title>Contact Susilya | Mechanical Design & CAD Training Services</title>
+
+    <meta name="description"
+        content="Contact Susilya for mechanical design services, CAD outsourcing, product development, and engineering training programs. Send your requirements to contact@susilya.com">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://susilya.com/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://susilya.com/contact.html">
+    <meta property="og:title" content="Contact Susilya | Engineering & CAD Services">
+    <meta property="og:description"
+        content="Get in touch for mechanical design, CAD outsourcing and training programs.">
+    <meta property="og:image" content="https://susilya.com/img/12.jpg">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="2.png" alt=""></a>
-            <div class="nav-links">
-                
-                <span class="menubtn" onclick="showMenu()">&#9776</span>
-                <span class="closebtn" onclick="hideMenu()">&#215</span> 
-                <ul id="menu">
-                    <li><a href="index.html">Engineering</a></li>
-                    <li><a href="training.html">Training</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            
-        </nav>
-   
-   
 
-   <div class="text-box">
-    <img class="rndimg" src="img/12.jpg" alt="">
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<nav>
+
+    <a href="/">
+        <img src="2.png" alt="Susilya Logo" width="200">
+    </a>
+
+    <div class="nav-links">
+
+        <span class="menubtn" onclick="showMenu()">☰</span>
+        <span class="closebtn" onclick="hideMenu()">✕</span>
+
+        <ul id="menu">
+
+            <li><a href="/">Engineering</a></li>
+            <li><a href="/training.html">Training</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<div class="text-box">
+
+    <img class="rndimg"
+         src="img/12.jpg"
+         alt="Contact Susilya Engineering Team"
+         loading="lazy">
+
     <h1>Contact Us</h1>
-    <p>If you are interested in any of the services that we provide feel 
-        free to mail your requirement to contact@susilya.com</p>
-   </div>     
-        
 
+    <p>
+        Have a project in mind?
+        Need mechanical design, CAD outsourcing, or engineering training?
 
-<!------JavaScript for Toggle Menu------>
- 
-<script>let x = document.getElementById('menu');
-    let menubtn = document.querySelector('.menubtn');
-    let closebtn = document.querySelector('.closebtn');
+        Send your requirements and our engineering team will respond with a suitable solution.
+    </p>
 
-    function showMenu()
-    {
-        x.style.display = 'block';
-        menubtn.style.display = 'none';
-        closebtn.style.display = 'block';
-    }
-    function hideMenu()
-    {
-        x.style.display = 'none';
-        menubtn.style.display = 'block';
-        closebtn.style.display = 'none';
-    }</script>
+    <a href="mailto:contact@susilya.com" class="hero-btn">
+        Email Us Now
+    </a>
 
-    
+</div>
+
+</header>
+
+<!-- ================= CONTACT INFO ================= -->
+
+<main>
+
+<section class="services">
+
+    <h2>Get In Touch</h2>
+
+    <p>
+        We provide engineering services including machine design,
+        CAD modeling, 2D drawings, FEM analysis and industrial training.
+    </p>
+
+    <div class="row">
+
+        <article class="services-col">
+
+            <h3>Email Support</h3>
+            <p>contact@susilya.com</p>
+
+        </article>
+
+        <article class="services-col">
+
+            <h3>Response Time</h3>
+            <p>We usually respond within 24–48 hours.</p>
+
+        </article>
+
+        <article class="services-col">
+
+            <h3>Services Available</h3>
+            <p>Mechanical Design, CAD Outsourcing, Training Programs</p>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <h4>Susilya Engineering Services</h4>
+
+    <p>
+        Professional mechanical design and CAD training services
+        for students, engineers and industries.
+    </p>
+
+    <p>
+        © 2026 Susilya. All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+
+<script>
+
+function showMenu() {
+    document.getElementById('menu').style.display = 'block';
+}
+
+function hideMenu() {
+    document.getElementById('menu').style.display = 'none';
+}
+
+</script>
+
 </body>
+
 </html>

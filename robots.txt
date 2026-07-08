@@ -1,0 +1,26 @@
+# Susilya Engineering Website
+# Search Engine Crawling Rules
+
+
+User-agent: *
+
+
+# Allow all public pages
+
+Allow: /
+
+
+
+# Block unnecessary system files
+
+Disallow: /admin/
+
+Disallow: /private/
+
+Disallow: /temp/
+
+
+
+# Sitemap Location
+
+Sitemap: https://susilya.com/sitemap.xml
