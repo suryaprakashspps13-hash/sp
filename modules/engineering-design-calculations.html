@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+Engineering Design Calculations Guide | Mechanical Engineering | Susilya Engineering
+</title>
+
+<meta name="description" content="
+Learn mechanical engineering design calculations including stress analysis,
+torque calculation, bending moment, factor of safety, fatigue analysis,
+and machine component design principles.
+">
+
+
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+<link rel="icon" href="../images/logo.webp">
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+<header class="header">
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<a href="../index.html">
+
+<img src="../images/logo.webp"
+alt="Susilya Engineering">
+
+</a>
+
+</div>
+
+
+
+
+<ul class="nav-menu">
+
+
+<li>
+<a href="../index.html">
+Home
+</a>
+</li>
+
+
+
+<li>
+<a href="../index.html#services">
+Services
+</a>
+</li>
+
+
+
+<li>
+<a href="training.html">
+Training
+</a>
+</li>
+
+
+
+<li>
+<a href="mailto:contact@susilya.com">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+
+<section class="hero">
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-content">
+
+
+<h1>
+Engineering Design Calculations
+</h1>
+
+
+<p>
+Understand the fundamental engineering calculations used in machine design,
+including stress analysis, torque, power transmission, factor of safety,
+material selection, and mechanical component sizing.
+</p>
+
+
+<div class="hero-buttons">
+
+
+<a href="#engineering-calculations" class="primary-btn">
+Read More
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- =========================
+     INTRODUCTION
+========================= -->
+
+
+<section class="section" id="engineering-calculations">
+
+
+<div class="section-heading">
+
+
+<h2>
+Importance of Engineering Design Calculations
+</h2>
+
+
+<p>
+
+Engineering calculations are the foundation of successful machine design.
+Before creating CAD models or manufacturing components, engineers must verify
+that every part can safely withstand operating loads and perform reliably.
+
+</p>
+
+
+</div>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Safe and Reliable Design
+</h3>
+
+
+<p>
+
+Calculations help engineers determine whether components can withstand
+forces, stresses, vibrations, and environmental conditions during operation.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Cost Optimisation
+</h3>
+
+
+<p>
+
+Proper calculations prevent over-design and allow engineers to select the
+right material, dimensions, and manufacturing methods.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Performance Improvement
+</h3>
+
+
+<p>
+
+Engineering analysis helps improve machine efficiency, durability,
+accuracy, and overall product performance.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ BASIC CONCEPTS
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Basic Concepts in Mechanical Design Calculations
+</h2>
+
+
+<p>
+
+Mechanical engineers use several fundamental concepts to analyse machine
+components and predict their behaviour under different loading conditions.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Force and Load Analysis
+</h3>
+
+
+<p>
+
+The first step in any design calculation is identifying all forces acting
+on a component. Loads may include weight, acceleration, torque, pressure,
+friction, and external operating forces.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Stress Calculation
+</h3>
+
+
+<p>
+
+Stress represents the internal resistance developed inside a material when
+an external load is applied.
+
+</p>
+
+
+<p>
+
+Basic stress equation:
+
+<br><br>
+
+<strong>
+Stress = Force / Area
+</strong>
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Strain Analysis
+</h3>
+
+
+<p>
+
+Strain describes the deformation experienced by a material due to applied
+stress. Understanding strain helps engineers predict component behaviour.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- =========================
+ STRESS ANALYSIS
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Types of Stress in Machine Design
+</h2>
+
+
+<p>
+
+Different machine components experience different types of stresses depending
+on their function and loading conditions.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Tensile Stress
+</h3>
+
+
+<p>
+
+Occurs when a component is pulled by an external force. Examples include
+tie rods, bolts, and suspension components.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Compressive Stress
+</h3>
+
+
+<p>
+
+Occurs when a component is pushed or compressed. Columns, supports,
+and structural members commonly experience compression.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Shear Stress
+</h3>
+
+
+<p>
+
+Develops when forces act parallel to a surface. Shafts, pins, bolts,
+and joints often require shear analysis.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<!-- =========================
+ BENDING MOMENT ANALYSIS
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Bending Moment Calculations in Machine Design
+</h2>
+
+
+<p>
+
+Bending analysis is essential for components such as shafts, beams,
+frames, brackets, and structural supports that experience transverse loads.
+
+</p>
+
+
+</div>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Understanding Bending Stress
+</h3>
+
+
+<p>
+
+When a component is subjected to a bending force, one side experiences
+tension while the opposite side experiences compression.
+
+</p>
+
+
+<p>
+
+The basic bending stress relationship is:
+
+<br><br>
+
+<strong>
+σ = M × y / I
+</strong>
+
+<br><br>
+
+Where:
+
+<br>
+σ = Bending stress
+
+<br>
+M = Bending moment
+
+<br>
+y = Distance from neutral axis
+
+<br>
+I = Moment of inertia
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Applications of Bending Analysis
+</h3>
+
+
+<p>
+
+Engineers perform bending calculations for:
+
+</p>
+
+
+<ul>
+
+<li>
+Machine frames
+</li>
+
+<li>
+Support structures
+</li>
+
+<li>
+Shafts
+</li>
+
+<li>
+Brackets
+</li>
+
+<li>
+Levers
+</li>
+
+<li>
+Robotic arms
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Importance of Bending Calculation
+</h3>
+
+
+<p>
+
+Incorrect bending analysis can result in excessive deformation,
+cracking, fatigue failure, or complete component breakdown.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- =========================
+ TORQUE CALCULATION
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Torque and Power Calculations
+</h2>
+
+
+<p>
+
+Torque calculations are required for rotating components such as shafts,
+gears, couplings, motors, and drive systems.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Torque Formula
+</h3>
+
+
+<p>
+
+
+<strong>
+
+T = F × r
+
+</strong>
+
+
+<br><br>
+
+
+Where:
+
+<br>
+
+T = Torque
+
+<br>
+
+F = Applied force
+
+<br>
+
+r = Radius or moment arm
+
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Power Transmission Calculation
+</h3>
+
+
+<p>
+
+
+Mechanical power transmitted by a rotating shaft can be calculated using:
+
+
+<br><br>
+
+
+<strong>
+
+Power = (Torque × Speed) / Constant
+
+</strong>
+
+
+<br><br>
+
+
+These calculations help select suitable motors, gearboxes,
+shafts, and couplings.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Industrial Applications
+</h3>
+
+
+<p>
+
+Torque calculations are commonly used in:
+
+</p>
+
+
+<ul>
+
+<li>
+Conveyor systems
+</li>
+
+<li>
+Gear drives
+</li>
+
+<li>
+Automation machines
+</li>
+
+<li>
+Rotary indexing systems
+</li>
+
+<li>
+Robotic mechanisms
+</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ FACTOR OF SAFETY
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Factor of Safety in Engineering Design
+</h2>
+
+
+<p>
+
+Factor of Safety (FOS) ensures that a machine component can withstand
+unexpected loads, variations in material properties, and operating conditions.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+What is Factor of Safety?</h3>
+
+
+<p>
+
+
+Factor of Safety is the ratio between material strength and the maximum
+allowable working stress.
+
+
+<br><br>
+
+
+<strong>
+
+FOS = Material Strength / Allowable Stress
+
+</strong>
+
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Factors Affecting Safety Factor</h3>
+
+
+<p>
+
+Engineers consider:
+
+</p>
+
+
+<ul>
+
+<li>
+Material uncertainty
+</li>
+
+<li>
+Load variations
+</li>
+
+<li>
+Operating environment
+</li>
+
+<li>
+Fatigue conditions
+</li>
+
+<li>
+Manufacturing accuracy
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Choosing Suitable Safety Factor</h3>
+
+
+<p>
+
+The selected safety factor depends on the application.
+Critical machines usually require higher safety margins compared with
+simple static structures.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ FATIGUE ANALYSIS
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Fatigue Analysis in Machine Components
+</h2>
+
+
+<p>
+
+Many machine components experience repeated loading. Fatigue analysis helps
+engineers predict failure caused by continuous stress cycles.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Fatigue Failure</h3>
+
+
+<p>
+
+Fatigue failure can occur even when the applied stress is below the
+material's yield strength due to repeated loading over time.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Common Fatigue Components</h3>
+
+
+<p>
+
+Fatigue analysis is important for:
+
+</p>
+
+
+<ul>
+
+<li>
+Rotating shafts
+</li>
+
+<li>
+Gears
+</li>
+
+<li>
+Springs
+</li>
+
+<li>
+Connecting rods
+</li>
+
+<li>
+Automotive components
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Improving Fatigue Life</h3>
+
+
+<p>
+
+Engineers improve fatigue resistance through:
+
+</p>
+
+
+<ul>
+
+<li>
+Better materials
+</li>
+
+<li>
+Surface finishing
+</li>
+
+<li>
+Proper fillet design
+</li>
+
+<li>
+Stress reduction
+</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ MATERIAL SELECTION
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Role of Material Selection in Calculations
+</h2>
+
+
+<p>
+
+Material properties directly influence design calculations and component
+performance.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Important Material Properties</h3>
+
+
+<p>
+
+Engineers consider:
+
+</p>
+
+
+<ul>
+
+<li>
+Yield strength
+</li>
+
+<li>
+Ultimate tensile strength
+</li>
+
+<li>
+Hardness
+</li>
+
+<li>
+Elastic modulus
+</li>
+
+<li>
+Fatigue strength
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Common Engineering Materials</h3>
+
+
+<p>
+
+Machine components commonly use:
+
+</p>
+
+
+<ul>
+
+<li>
+Mild Steel
+</li>
+
+<li>
+EN8 Steel
+</li>
+
+<li>
+EN19 Steel
+</li>
+
+<li>
+Stainless Steel
+</li>
+
+<li>
+Aluminium Alloys
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Design Optimisation</h3>
+
+
+<p>
+
+Correct material selection allows engineers to achieve the required strength
+while reducing weight and manufacturing cost.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- =========================
+ DESIGN CALCULATION WORKFLOW
+========================= -->
+
+
+<section class="workflow">
+
+
+<div class="section-heading">
+
+
+<h2>
+Engineering Design Calculation Workflow
+</h2>
+
+
+<p>
+
+A systematic calculation process helps engineers develop safe,
+efficient, and manufacturable machine components.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="workflow-grid">
+
+
+
+<div class="workflow-step">
+
+<span>1</span>
+
+<h3>
+Define Requirements
+</h3>
+
+<p>
+
+Identify loads, operating conditions, speed, environment,
+and performance requirements.
+
+</p>
+
+</div>
+
+
+
+
+<div class="workflow-step">
+
+<span>2</span>
+
+<h3>
+Load Analysis
+</h3>
+
+<p>
+
+Calculate forces, moments, torque, power, and other
+mechanical loads acting on components.
+
+</p>
+
+</div>
+
+
+
+
+<div class="workflow-step">
+
+<span>3</span>
+
+<h3>
+Component Design
+</h3>
+
+<p>
+
+Select materials, determine dimensions, and perform
+stress and strength calculations.
+
+</p>
+
+</div>
+
+
+
+
+<div class="workflow-step">
+
+<span>4</span>
+
+<h3>
+Design Verification
+</h3>
+
+<p>
+
+Check safety factors, fatigue life, deformation,
+and manufacturing feasibility.
+
+</p>
+
+</div>
+
+
+
+
+<div class="workflow-step">
+
+<span>5</span>
+
+<h3>
+Final Documentation
+</h3>
+
+<p>
+
+Prepare CAD models, drawings, specifications,
+and manufacturing documents.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ DESIGN CHECKLIST
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Mechanical Design Calculation Checklist
+</h2>
+
+
+<p>
+
+Before releasing a design for manufacturing, engineers should verify
+the following points.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Load Verification</h3>
+
+
+<p>
+
+✓ All operating loads identified
+
+<br>
+
+✓ Static and dynamic forces considered
+
+<br>
+
+✓ Maximum loading conditions analysed
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Strength Verification</h3>
+
+
+<p>
+
+✓ Stress calculations completed
+
+<br>
+
+✓ Factor of safety confirmed
+
+<br>
+
+✓ Fatigue conditions evaluated
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Manufacturing Review</h3>
+
+
+<p>
+
+✓ Material availability checked
+
+<br>
+
+✓ Manufacturing process considered
+
+<br>
+
+✓ Tolerances verified
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ COMMON MISTAKES
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Common Engineering Calculation Mistakes
+</h2>
+
+
+<p>
+
+Avoiding calculation errors is essential for developing safe and reliable
+machine designs.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature-card">
+
+
+<h3>
+Ignoring Real Operating Conditions</h3>
+
+
+<p>
+
+Design calculations should consider vibration, shock loads, temperature,
+corrosion, and actual working environments.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Incorrect Load Assumptions</h3>
+
+
+<p>
+
+Using incorrect loads can result in unsafe designs or unnecessary
+over-engineering.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Overlooking Fatigue</h3>
+
+
+<p>
+
+Components subjected to repeated loading must be checked for fatigue
+failure, not only static strength.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ FAQ
+========================= -->
+
+
+<section class="faq">
+
+
+<div class="section-heading">
+
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+Why are engineering calculations important in machine design?
+</h3>
+
+
+<p>
+
+Engineering calculations help determine whether machine components can
+safely withstand operating loads while achieving the required performance
+and service life.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+Which calculations are commonly used by mechanical engineers?
+</h3>
+
+
+<p>
+
+Common calculations include stress analysis, torque calculation,
+power transmission, shaft design, bearing selection, gear calculations,
+fatigue analysis, and structural analysis.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+Are CAD models enough without engineering calculations?
+</h3>
+
+
+<p>
+
+No. CAD models show the geometry of a component, but calculations verify
+whether the design is mechanically safe and suitable for operation.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="faq-item">
+
+
+<h3>
+What software is used for engineering calculations?
+</h3>
+
+
+<p>
+
+Engineers commonly use spreadsheets, mathematical tools, CAD software,
+and simulation software such as FEA tools for advanced analysis.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ RELATED ARTICLES
+========================= -->
+
+
+<section class="section">
+
+
+<div class="section-heading">
+
+
+<h2>
+Related Mechanical Engineering Articles
+</h2>
+
+
+<p>
+
+Continue learning with these related topics.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="feature-grid">
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Shaft Design</h3>
+
+
+<p>
+
+Learn shaft sizing, torque transmission,
+bending stress, and material selection.
+
+</p>
+
+
+<a href="shaft-design.html">
+Read Article →
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Bearing Selection</h3>
+
+
+<p>
+
+Understand bearing types, load ratings,
+life calculations, and lubrication.
+
+</p>
+
+
+<a href="bearing-selection.html">
+Read Article →
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="feature-card">
+
+
+<h3>
+Machine Design Process</h3>
+
+
+<p>
+
+Explore the complete workflow from requirements
+to manufacturing drawings.
+
+</p>
+
+
+<a href="machine-design-process.html">
+Read Article →
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+ FINAL CTA
+========================= -->
+
+
+<section class="contact-cta">
+
+
+<h2>
+Continue Exploring Mechanical Engineering
+</h2>
+
+
+<p>
+
+Explore more technical resources covering machine design,
+CAD modelling, manufacturing drawings, mechanical components,
+industrial automation, and engineering best practices.
+
+</p>
+
+
+<a href="knowledge-hub.html" class="primary-btn">
+
+Explore Knowledge Hub
+
+</a>
+
+
+</section>
+
+
+
+
+
+</body>
+
+</html>
